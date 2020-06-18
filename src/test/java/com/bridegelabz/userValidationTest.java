@@ -111,4 +111,16 @@ public class userValidationTest {
         boolean result = UserValidator.userDataValidation("912 ",UserValidator.phonePattern);
         Assert.assertFalse(result);
     }
+    //Test case for validating password minimum 8 characters
+    @Test
+    public void givenPasswordWhenProperShouldReturnTrue() {
+        boolean result = UserValidator.userDataValidation("HelloSaiprasad",UserValidator.passwordRule1);
+        Assert.assertTrue(result);
+    }
+
+    @Test
+    public void givenPasswordWhenShortShouldReturnFalse() {
+        boolean result = UserValidator.userDataValidation("hello",UserValidator.passwordRule1);
+        Assert.assertFalse(result);
+    }
 }
