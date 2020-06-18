@@ -63,4 +63,16 @@ public class userValidationTest {
         boolean result = UserValidator.userDataValidation("1234",UserValidator.namePattern);
         Assert.assertFalse(result);
     }
+    //Test case for validating email address
+    @Test
+    public void givenEmailIdWhenProperShouldReturnTrue() {
+        boolean result = UserValidator.userDataValidation("abc@gmail.com", UserValidator.emailPattern);
+        Assert.assertTrue(result);
+    }
+
+    @Test
+    public void givenEmailIdWhenNotProperShouldReturnFalse() {
+        boolean result = UserValidator.userDataValidation("abc.@gmail.com", UserValidator.emailPattern);
+        Assert.assertFalse(result);
+    }
 }
