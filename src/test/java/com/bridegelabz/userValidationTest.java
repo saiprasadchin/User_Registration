@@ -34,4 +34,33 @@ public class userValidationTest {
         boolean result = UserValidator.userDataValidation("1234",UserValidator.namePattern);
         Assert.assertFalse(result);
     }
+    @Test
+    public void givenLastNameWhenProperShouldReturnTrue() {
+        boolean result = UserValidator.userDataValidation("Chindam",UserValidator.namePattern);
+        Assert.assertTrue(result);
+    }
+
+    @Test
+    public void givenLastNameWhenAllLowerCaseShouldReturnFalse() {
+        boolean result = UserValidator.userDataValidation("chindam",UserValidator.namePattern);
+        Assert.assertFalse(result);
+    }
+
+    @Test
+    public void givenLastNameWhenTwoCharacterPresentShouldReturnFalse() {
+        boolean result = UserValidator.userDataValidation("ch",UserValidator.namePattern);
+        Assert.assertFalse(result);
+    }
+
+    @Test
+    public void givenLastNameWhenAllUpperCaseShouldReturnFalse() {
+        boolean result = UserValidator.userDataValidation("CHINDAM",UserValidator.namePattern);
+        Assert.assertFalse(result);
+    }
+
+    @Test
+    public void givenLastNameWhenDigitsEnteredShouldReturnFalse() {
+        boolean result = UserValidator.userDataValidation("1234",UserValidator.namePattern);
+        Assert.assertFalse(result);
+    }
 }
