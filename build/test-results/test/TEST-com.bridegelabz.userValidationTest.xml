@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridegelabz.userValidationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-06-18T20:13:09" hostname="SAIPRASAD-PC" time="0.006">
+<testsuite name="com.bridegelabz.userValidationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-06-18T20:37:32" hostname="SAIPRASAD-PC" time="0.006">
   <properties/>
-  <testcase name="givenPasswordWithAtLeastOneDigitWhenProperShouldReturnTrue" classname="com.bridegelabz.userValidationTest" time="0.006">
+  <testcase name="givenPassowrdWithExactOneSpecialCharacterWhenProperShouldReturnTrue" classname="com.bridegelabz.userValidationTest" time="0.006">
     <failure message="java.lang.AssertionError" type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
 	at org.junit.Assert.assertTrue(Assert.java:52)
-	at com.bridegelabz.userValidationTest.givenPasswordWithAtLeastOneDigitWhenProperShouldReturnTrue(userValidationTest.java:154)
+	at com.bridegelabz.userValidationTest.givenPassowrdWithExactOneSpecialCharacterWhenProperShouldReturnTrue(userValidationTest.java:172)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
