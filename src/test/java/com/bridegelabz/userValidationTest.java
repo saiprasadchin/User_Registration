@@ -123,4 +123,28 @@ public class userValidationTest {
         boolean result = UserValidator.userDataValidation("hello",UserValidator.passwordRule1);
         Assert.assertFalse(result);
     }
+    //Test case for validating password at-least one Upper case
+    @Test
+    public void givenPasswordWithAtLeastOneUpperCaseWhenProperShouldReturnTrue() {
+        boolean result = UserValidator.userDataValidation("Saiprasad",UserValidator.passwordRule2);
+        Assert.assertTrue(result);
+    }
+
+    @Test
+    public void givenPasswordWithAtLeastOneUpperCaseWhenAllLowerCaseShouldReturnFalse() {
+        boolean result = UserValidator.userDataValidation("saiprasad",UserValidator.passwordRule2);
+        Assert.assertFalse(result);
+    }
+
+    @Test
+    public void givenPasswordWithAtLeastOneUpperCaseWhenNumberPresentShouldReturnFalse() {
+        boolean result = UserValidator.userDataValidation("Saichin8080",UserValidator.passwordRule2);
+        Assert.assertFalse(result);
+    }
+
+    @Test
+    public void givenPasswordWithAtLeastOneUpperCaseWhenSpecialCharacterPresentShouldReturnFalse() {
+        boolean result = UserValidator.userDataValidation("Sai@#%$%$ggd",UserValidator.passwordRule2);
+        Assert.assertFalse(result);
+    }
 }
