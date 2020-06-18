@@ -147,4 +147,22 @@ public class userValidationTest {
         boolean result = UserValidator.userDataValidation("Sai@#%$%$ggd",UserValidator.passwordRule2);
         Assert.assertFalse(result);
     }
+    //Test case for validating password at-least one digit
+    @Test
+    public void givenPasswordWithAtLeastOneDigitWhenProperShouldReturnTrue() {
+        boolean result = UserValidator.userDataValidation("Saiprasad98",UserValidator.passwordRule3);
+        Assert.assertTrue(result);
+    }
+
+    @Test
+    public void givenPasswordWithAtLeastOneDigitWhenDigitNotPresentShouldReturnFalse() {
+        boolean result = UserValidator.userDataValidation("saiprasadchin",UserValidator.passwordRule3);
+        Assert.assertFalse(result);
+    }
+
+    @Test
+    public void givenPasswordWithAtLeastOneDigitWhenSpecialCharacterPresentShouldReturnFalse() {
+        boolean result = UserValidator.userDataValidation("Sai@8080",UserValidator.passwordRule3);
+        Assert.assertFalse(result);
+    }
 }
