@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bridegelabz.userValidationTest" tests="31" skipped="0" failures="0" errors="0" timestamp="2020-06-28T15:35:54" hostname="SAIPRASAD-PC" time="0.1">
+  <properties/>
+  <testcase name="givenFirstName_WhenProperShould_ReturnTrue" classname="com.bridegelabz.userValidationTest" time="0.067"/>
+  <testcase name="givenPasswordWithAtLeastOneUpperCase_WhenSpecialCharacterPresentShould_ReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.001"/>
+  <testcase name="givenPasswordWithAtLeastOneDigit_WhenSpecialCharacterPresentShould_ReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.001"/>
+  <testcase name="givenLastName_WhenAllUpperCaseShould_ReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.001"/>
+  <testcase name="givenPhoneNumber_WhenPhoneNumberImproperShould_ReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.0"/>
+  <testcase name="givenFirstName_WhenTwoCharacterPresentShould_ReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.0"/>
+  <testcase name="givenEmailId_WhenNotProperShould_ReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.001"/>
+  <testcase name="givenPassowrdWithExactOneSpecialCharacter_WhenAllLowerCaseShould_ReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.001"/>
+  <testcase name="givenEmailId_WhenProperShould_ReturnTrue" classname="com.bridegelabz.userValidationTest" time="0.001"/>
+  <testcase name="givenLastName_WhenDigitsEnteredShould_ReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.0"/>
+  <testcase name="givenPhoneNumber_WhenPhoneNumberNotPresentShould_ReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.0"/>
+  <testcase name="givenPasswordWithAtLeastOneDigit_WhenProperShould_ReturnTrue" classname="com.bridegelabz.userValidationTest" time="0.001"/>
+  <testcase name="givenPhoneNumber_WhenCountryCodeNotPresentShould_ReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.0"/>
+  <testcase name="givenPassowrdWithExactOneSpecialCharacter_WhenSpecialCharactersNotPresentShould_ReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.001"/>
+  <testcase name="givenPassowrdWithExactOneSpecialCharacter_WhenProperShould_ReturnTrue" classname="com.bridegelabz.userValidationTest" time="0.001"/>
+  <testcase name="givenLastName_WhenProperShould_ReturnTrue" classname="com.bridegelabz.userValidationTest" time="0.001"/>
+  <testcase name="givenPasswordWithAtLeastOneUpperCase_WhenNumberPresentShould_ReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.0"/>
+  <testcase name="givenPasswordWithAtLeastOneDigit_WhenDigitNotPresentShould_ReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.0"/>
+  <testcase name="givenPasswordWithAtLeastOneUpperCase_WhenProperShould_ReturnTrue" classname="com.bridegelabz.userValidationTest" time="0.0"/>
+  <testcase name="givenPassword_WhenProperShould_ReturnTrue" classname="com.bridegelabz.userValidationTest" time="0.0"/>
+  <testcase name="givenLastName_WhenAllLowerCaseShould_ReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.0"/>
+  <testcase name="givenPassword_WhenShortShould_ReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.0"/>
+  <testcase name="givenPhoneNumber_WhenCountryCodeImproperShould_ReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.001"/>
+  <testcase name="givenPhoneNumber_WhenProperShould_ReturnTrue" classname="com.bridegelabz.userValidationTest" time="0.0"/>
+  <testcase name="givenPasswordWithAtLeastOneUpperCase_WhenAllLowerCaseShould_ReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.0"/>
+  <testcase name="givenFirstNameWhenAllUpperCaseShould_ReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.0"/>
+  <testcase name="givenFirstName_WhenAllLowerCase_ShouldReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.0"/>
+  <testcase name="givenPhoneNumber_WhenFormatImproperShould_ReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.001"/>
+  <testcase name="givenPassowrdWithExactOneSpecialCharacter_WhenNumberNotPresentShould_ReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.0"/>
+  <testcase name="givenLastName_WhenTwoCharacterPresentShould_ReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.001"/>
+  <testcase name="givenFirstName_whenDigitsEntered_ShouldReturnFalse" classname="com.bridegelabz.userValidationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
